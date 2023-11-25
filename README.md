@@ -17,3 +17,11 @@
 20:17:44.140Z ERRO propolis-server: [44, 75, 6d, 70, 52, 65, 71, 75, 65, 73, 74, 22]
 20:17:44.140Z ERRO propolis-server: DumpRequest"
 ```
+
+## Testing fixes
+
+Falcon can use a custom built propolis server via the `--propolis` flag in
+combination with the `launch` command. If you want avoid rebuilding the topology
+while taking laps, falcon has `hyperstop` and `hyperstart` commands to stop and
+start VMs. The `hyperstart` command also takes a `--propolis` flag to use a
+custom `propolis-server` build.
